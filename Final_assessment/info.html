@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <title>Info | Liliya Panfilova</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Info">
+    <meta name="keywords" content="Info">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+    
+</head>
+   
+<body>
+
+    <header>
+        <img src="logo.png" alt="logo_image"/>
+        <h1>INFO</h1>
+    </header>
+
+    <div id="main_sections">
+        <!-- menu -->
+        <nav>
+            <ul>
+                <li><a class="menu_link" href="honesty.html">HOME</a></li>
+                <li><a class="menu_link active_link" href="info.html">INFO</a></li>
+                <li><a class="menu_link" href="reflection.html">REFLECTION</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2>Sign up:</h2>
+            
+            <!-- user sign up form -->
+            <form action="https://httpbin.org/post" target="_blank" method="post" name="signup" onsubmit="return error_validation()">
+                <label for="first_name">First name:</label><br>
+                <input type="text" id="first_name" name="first_name" placeholder="John" pattern="^[A-Z][a-z]{0,}$" required><br>  
+                <label for="last_name">Last name:</label><br>
+                <input type="text" id="last_name" name="last_name" placeholder="Doe" pattern="^[A-Z][a-z]{0,}$" required><br>
+                <label for="password1">Password:</label><br>
+                <input type="password" id="password1" name="password1" placeholder="******" required><br>
+                <label for="password2">Confirm Password:</label><br>
+                <input type="password" id="password2" name="password2" placeholder="******" required><br>
+                <label for="user_name">User name:</label><br>
+                <input type="text" id="user_name" name="user_name" placeholder="username" required><br>  
+                <label for="education_level">Education Level:</label><br> 
+                <select id="education_level" name="education_level">
+                    <option value="">- select -</option>
+                    <option value="tech_diploma">Technical Diploma</option>
+                    <option value="college_diploma">College Diploma</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="other">Others</option>
+                </select><br> 
+                
+                <p class="education_status">Education Status:</p><br>
+                <input type="radio" id="graduated" class="education_status" name="graduated" value="Graduated">
+                <label for="graduated">Graduated</label><br>
+                <input type="radio" id="enrolled" class="education_status" name="education_status" value="Current enrolled">
+                <label for="enrolled">Current enrolled</label><br>
+                <input type="radio" id="not_grad" class="education_status" name="education_status" value="Did not graduate">
+                <label for="not_grad">Did not graduate</label><br>
+                
+                <label for="e_mail">E-mail:</label><br>
+                <input type="email" id="e_mail" name="e_mail" placeholder="example@domain.com" required><br>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="18" max="60" placeholder="18 - 60"><br>
+                <input type="hidden" name="lastName" id="lastName" value="Panfilova"/> 
+                <input type="hidden" name="studentId" id="studentId" value="110303153"/>
+                <input type="reset" id="reset" value="Reset">
+                <input type="submit" id="submit" value="Submit">
+                
+            </form>           
+        </main>
+        
+        <aside>
+            
+        </aside>
+    </div>
+
+    <footer>
+        <p>Liliya Panfilova &copy; 2021 <a class="git_link" href="https://github.com/lpanfilova/web222_final_assessment">GitHub Link</a></p>
+        
+    </footer>
+
+</body>

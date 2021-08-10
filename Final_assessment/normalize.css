@@ -1,0 +1,158 @@
+    body {
+        background-color: #F8F8FF;
+        font-family: Helvetica, sans-serif;
+        color: black;
+        font-size: 100%;
+        margin: 70px 0px 0px 0px;
+    }
+    
+    header, footer{
+        background-color: #223847;
+        color: #ffffff;
+        height: 48px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        border-radius: 10px;
+        position: fixed;
+    }
+    
+    header{
+        top: 0px;   
+    }
+    
+    footer{
+        bottom: 0px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    /*logo style*/
+    img
+    {
+        max-width: 40px;
+        display: inline-block;
+        margin: 5px 10px;
+        position:relative;
+    }
+    
+    /*nav, main and aside sections in a grid*/
+    #main_sections{
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 700px) 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+    
+    nav{
+       padding: 0px 5px; 
+       text-align: left;
+    }
+    
+    a.menu_link{
+        text-decoration: none;
+        color: #F8F8FF;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px; 
+        background-color: rgba(237,43,54, 0.70);
+    }
+    
+    a.menu_link:hover, a.menu_link:active, a.active_link{ 
+        background-color:  #ed2b36;
+        margin: 0px;
+    }
+    
+    ul{
+        list-style-type: none; 
+    }
+    
+    li{
+        padding: 25px 15px;  
+    }
+    
+    main{
+        background-color: #afc7c2;
+        min-height: 200px;
+        border: solid thin #a6afb5;
+        border-radius: 10px;
+        margin: 25px auto;
+        padding: 10px;
+    }
+    
+    aside{
+        background-color: rgba(242,152,76, 0.80);
+        border-radius: 10px;
+        margin: 25px 15px;
+        padding: 10px;
+        min-width: 180px;
+    }
+    
+    aside:hover{
+        background-color: rgba(242,152,76);
+    }
+    
+    h1{
+        font-size: 30px;
+        vertical-align: middle;
+        line-height: 10px;
+        display: inline-block;
+        position:absolute;
+    }
+    
+    /*form and input style*/
+    form{
+        min-width: 450px;
+    }
+    
+    label, input, select{
+        margin: 5px 10px;
+    }
+    
+    label{
+        font-size: 17px;
+    }
+    
+    input, select{
+        font-size: 17px;
+        border: solid thin #a6afb5;
+        border-radius: 5px;
+    }
+    
+    input{
+        min-height: 30px;
+        min-width: 250px;
+    }
+    
+    select{
+        min-width: 255px;
+        min-height: 35px;
+    }
+    
+    .education_status{
+        margin: 0px 0px;
+        min-height: 15px;
+        min-width: 50px;
+    }
+    
+    p.education_status{
+        margin: 0px 10px;
+    }
+    
+    input[type=submit], input[type=reset]{
+        min-width: 255px;
+        min-height: 35px;
+        margin: 10px 10px;
+    }
+    
+    input[type=submit]:hover, input[type=reset]:hover {
+        background-color: #5f8f86;
+        
+    }
+    
+    .git_link{
+        color: #ffffff;
+    }
+    
+    
+    
